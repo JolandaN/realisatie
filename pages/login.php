@@ -35,7 +35,7 @@ if(isset($_POST["submit"])) {
     $email = htmlspecialchars($_POST["email"]);
     $password = htmlspecialchars($_POST["password"]);
     try {
-        $sql = "SELECT * FROM customer WHERE email = ?";
+        $sql = "SELECT * FROM user WHERE email = ?";
         $stmt = $connection->prepare($sql);
         $stmt->execute(array($email));
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
