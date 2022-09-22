@@ -34,7 +34,7 @@
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div class="container-fluid">
 
-                            <a class="navbar-brand" href="#">NetFish</a>
+                            <a class="navbar-brand" href="#">StatTracker</a>
 
                             <!-- search bar which allows the user to find a video by title -->
                                 <form name="search" action="index.php?page=homepage" method="POST" class="form">
@@ -56,7 +56,7 @@
                 <!-- navbar shown when rol is 1 (admin) -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">NetFish</a>
+                    <a class="navbar-brand" href="#">StatTracker</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='videos_edit') {echo "active";}?>" onclick="location.href='index.php?page=videos_edit'">Edit</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='videos') {echo "active";}?>" onclick="location.href='index.php?page=videos'">Delete</a>
