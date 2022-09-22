@@ -15,4 +15,3 @@ if(isset($_GET["page"])) {
 if($page) {
     include("pages/".$page.".php");
 }
-?>
