@@ -17,30 +17,26 @@ include("..\DBconfig.php");
 if(isset($_POST["submit"])) {
     $message = "";
         // $_POST firstname lastname email and password that are filled in the form will be added to the database
-    $firstname = htmlspecialchars($_POST["firstname"]);
-    $lastname = htmlspecialchars($_POST["lastname"]);
+    $name = htmlspecialchars($_POST["lastname"]);
     $email = htmlspecialchars($_POST["email"]);
     $password = htmlspecialchars($_POST["password"]);
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-    $token = "";
-    $sql = "SELECT * FROM customer WHERE email = ?";
+    $sql = "SELECT * FROM user WHERE email = ?";
     $stmt = $connection->prepare($sql);
     $stmt->execute(array($email));
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     if($result) {
         $message = "This e-mail address has already been registered.";
     }else{
-        $sql = "INSERT INTO customer (ID, firstname, lastname, email, password, token, rol)
-        values (null,?,?,?,?,?,?)";
+        $sql = "INSERT INTO user (ID, name, email, password, rol)
+        values (null,?,?,?,?)";
 
         $stmt = $connection->prepare($sql);
         try {
             $stmt->execute(array(
-                $firstname,
-                $lastname,
+                $name,
                 $email,
                 $passwordHash,
-                $token,
                 0)
             );
             $message = "New account registered.";
