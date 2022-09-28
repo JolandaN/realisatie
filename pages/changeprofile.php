@@ -80,3 +80,6 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
+
+
+<!-- nog profiel bewerken ipv alleen deleten.  -->
