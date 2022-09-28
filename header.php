@@ -36,14 +36,7 @@
 
                             <a class="navbar-brand" href="#">StatTracker</a>
 
-                            <!-- search bar which allows the user to find a video by title -->
-                                <form name="search" action="index.php?page=homepage" method="POST" class="form">
-                                    <input type="hidden" name="id" id="id"
-                                    value="<?php echo $video['ID'];?>" />   
-                                    <input type="text" name="title" id="title" value="<?php if(!empty($_POST['title'])) echo $_POST['title']; ?>">
-                                    <input type="submit" class="icon" id="submit" name="submit" value="Search" />
 
-                                </form>
                         </div>
                     <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
                     </nav>
@@ -58,16 +51,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">StatTracker</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='videos_edit') {echo "active";}?>" onclick="location.href='index.php?page=videos_edit'">Edit</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='videos') {echo "active";}?>" onclick="location.href='index.php?page=videos'">Delete</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='videos_add') {echo "active";}?>" onclick="location.href='index.php?page=videos_add'">Add</a>
-                        <form name="search" action="index.php?page=homepage" method="POST" class="form">
-                            <input type="hidden" name="id" id="id"
-                                value="<?php echo $video['ID'];?>" />   
-                            <input type="text" name="title" id="title" value="<?php if(!empty($_POST['title'])) echo $_POST['title']; ?>">
-                            <input type="submit" class="icon" id="submit" name="submit" value="Search" />
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Edit</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Delete</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Add</a>
 
-                        </form>
                 </div>
             <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
         </nav>
