@@ -11,10 +11,18 @@ if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIVE"){
     location.href='../index.php';
     </script>";
 }
-$sql = "SELECT * FROM user";
+// $sql = "SELECT * FROM user";
+//     $stmt = $connection->prepare($sql);
+//     $stmt->execute(array());
+//     $users = $stmt->fetch(PDO::FETCH_ASSOC);
+
+$sql = 'SELECT * FROM user WHERE email = :email';
 $stmt = $connection->prepare($sql);
-$stmt->execute(array());
-$videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$stmt->execute([':email' => $_SESSION['E-MAIL']]);
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+
 ?>
 <div class="container d-flex justify-content-center">
 
@@ -35,9 +43,6 @@ $videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         action="index.php?page=deleteuser"
         method="POST">
 
-            <div class="col-12">
-                <h4 class="h4 mb-1 fw-normal" style="color: white; text-shadow: 2px 2px black;"><?php echo $user['name'];?></h4>
-            </div>
             <div class="col-9">
                 
                 <div class="row">
