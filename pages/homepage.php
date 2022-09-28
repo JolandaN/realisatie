@@ -17,6 +17,8 @@
 
         <!-- this is homepage -->
 
+        stats go here. 
+
 <body>
 
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
