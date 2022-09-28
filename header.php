@@ -51,9 +51,9 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">StatTracker</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Edit</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Delete</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">Add</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
 
                 </div>
             <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
