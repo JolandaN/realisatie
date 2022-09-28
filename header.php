@@ -32,9 +32,9 @@
                 ?>
                 <!-- navbar shown when rol is 0 (user)-->
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline;">StatTracker</h1>
                         <div class="container-fluid">
 
-                            <a class="navbar-brand" href="#">StatTracker</a>
                             <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
                             <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
                             <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
@@ -52,8 +52,9 @@
 
                 <!-- navbar shown when rol is 1 (admin) -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">StatTracker</a>
+                <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline; max-width: 200px;">StatTracker</h1>
                     <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
