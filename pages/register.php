@@ -6,10 +6,7 @@
 
 <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css"/>
 </head>
-<body style="background-image: linear-gradient(to right top, #000000, #141414, #212121, #2f2f2f, #3d3d3d);   
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;">
+<body>
 <?php
     // register.html is the layout
 include("register.html");
@@ -49,11 +46,7 @@ if(isset($_POST["submit"])) {
     echo "<div id='message'>".$message."</div>";
 }
 ?>
-<style>
-    #message {
-        color: white !important;
-    }
-</style>
+
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
 <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
