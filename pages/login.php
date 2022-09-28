@@ -22,7 +22,6 @@
             value="Submit"/>
 </div>
 <a href="pages/register.php">Register</a><br>
-<a href="pages/forgot_password.php">Forgot password</a>
 </form>
 </div>
 </div>
