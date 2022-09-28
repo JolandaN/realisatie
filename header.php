@@ -36,10 +36,11 @@
 
                             <a class="navbar-brand" href="#">StatTracker</a>
                             <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
-
+                            
+                            <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 
                         </div>
-                    <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
+
                     </nav>
 
 
@@ -55,9 +56,9 @@
                     <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
                     <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
-
+                    <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
                 </div>
-            <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
+
         </nav>
             <?php
             }
