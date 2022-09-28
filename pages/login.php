@@ -3,16 +3,12 @@
 <head>
 <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
 </head>
-<body style="background-image: url('img/netflix.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;">
+<body>
 
-<div class="container d-flex justify-content-center" style="padding-top: 10%;">
+<div class="container d-flex justify-content-center"">
     <form name="login" class="login" method="POST"
-    enctype="multipart/form-data" action="" style="background-color: black; border: 30px solid black;">
-    <h1 class="h3 mb-3 fw-normal" style="color: white; text-shadow: 2px 2px red;">Please sign in</h1>
+    enctype="multipart/form-data" action="">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     <input required type="email" class="form-control" id="floatingInput" name="email"
         placeholder="ex@ample.com"/>
     <input required type="password" class="form-control" id="floatingInput" name="password"
