@@ -35,6 +35,7 @@
                         <div class="container-fluid">
 
                             <a class="navbar-brand" href="#">StatTracker</a>
+                            <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
 
 
                         </div>
