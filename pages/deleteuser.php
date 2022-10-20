@@ -1,3 +1,13 @@
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+<tbody>
 <?php 
 
 if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIVE")) {
@@ -6,7 +16,7 @@ if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIVE")) {
     location.href='../index.php';
     </script>";
 }
-$sql = "DELETE FROM user WHERE ID = ?";
+$sql = "SELECT FROM user WHERE ID = ?";
 $stmt = $connection->prepare($sql);
 try{
     $stmt->execute(array($_POST['id']));
@@ -17,3 +27,5 @@ try{
     echo $e->getMessage();
 }
 ?>
+</tbody>
+</table>
