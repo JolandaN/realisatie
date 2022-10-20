@@ -37,7 +37,6 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <form name="edit" class="form"
         action="index.php?page=deleteuser"
         method="POST">
-
             <div class="col-9">
                 
                 <div class="row">
@@ -66,6 +65,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <br>
         </form> 
     </div>
+
 <?php
 }
 ?>
