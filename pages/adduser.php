@@ -14,13 +14,13 @@
         
         <h4 class="h4 mb-1 fw-normal">Add user</h4>
 
-        <h6  style="color: red;">Name:</h6>
+        <h6>Name:</h6>
         <input type="text" name="name" id="name"/>
 
-        <h6  style="color: red;">Email:</h6>
+        <h6>Email:</h6>
         <input type="text" name="email" id="email"/>
 
-        <h6  style="color: red;">Password:</label><br>
+        <h6>Password:</label><br>
         <input type="text" name="password" id="password" />
         
         <div class="icon_container">
