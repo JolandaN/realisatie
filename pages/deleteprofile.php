@@ -29,9 +29,6 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>    
 
 <?php foreach($users as $user) { ?>
-
-    <div class="row">
-
             <!-- this form shows all users with the option to delete them from the database -->
 
         <form name="edit" class="form"
@@ -55,7 +52,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <br>
             <br>
         </form> 
-    </div>
+
 
 <?php
 }
