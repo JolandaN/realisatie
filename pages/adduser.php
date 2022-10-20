@@ -44,21 +44,27 @@ if(isset($_POST['submit'])) {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
-    $sql = "INSERT INTO user (ID, name,  email, password) values (?, ?, ?, ?)";
-    $stmt = $connection->prepare($sql);
-    try {
-        $stmt->execute(array(
-            NULL,
-            $name,
-            $email,
-            $password)
-        );
-        $message = "New user added.";
-    }
-    catch(PDOException $e) {
-        $message = "Couldn't add new user.".$e->getMessage();
-    }
-    echo "<div id='message'>".$message."</div>";
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+$sql = "INSERT INTO user (ID, name, email, password, rol)
+values (null,?,?,?,?)";
+
+$stmt = $connection->prepare($sql);
+try {
+    $stmt->execute(array(
+        $name,
+        $email,
+        $passwordHash,
+        0)
+    );
+    $message = "New account registered.";
+}
+catch(PDOException $e) 
+{
+    $message = "Could not register new account.".$e->getMessage();
+}
+
+echo "<div id='message'>".$message."</div>";
 }
 ?>
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
