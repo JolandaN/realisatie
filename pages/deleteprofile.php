@@ -33,8 +33,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <form name="edit" class="form"
         action="index.php?page=deleteuser"
-        method="POST"
-        style="border:1px solid black">
+        method="POST">
                         <h6 class="h6 mb-1 fw-normal" >Name:</h6 >
                         <input type="text" name="title" value="<?php echo $user['name'];?>" />  
                         
