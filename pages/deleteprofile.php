@@ -16,9 +16,9 @@ if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIVE"){
 //     $stmt->execute(array());
 //     $users = $stmt->fetch(PDO::FETCH_ASSOC);
 
-$sql = 'SELECT * FROM user WHERE email = :email';
+$sql = 'SELECT * FROM user';
 $stmt = $connection->prepare($sql);
-$stmt->execute([':email' => $_SESSION['E-MAIL']]);
+$stmt->execute([]);
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
