@@ -48,10 +48,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
                         <h6 class="h6 mb-1 fw-normal" style="color: red;">Email:</h6>   
                         <input type="text" name="genre" value="<?php echo $user['email'];?>" /> 
-                        
-                        <h6 class="h6 mb-1 fw-normal" style="color: red;">Password:</h6>   
-                        <input type="text" name="link" value="<?php echo $user['password'];?>" />  
-                        
+                                               
                         <div class="icon_container">
                         <input type="submit" class="icon" name="delete" value="Delete"/>
 
