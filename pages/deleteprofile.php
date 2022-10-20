@@ -11,11 +11,6 @@ if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIVE"){
     location.href='../index.php';
     </script>";
 }
-// $sql = "SELECT * FROM user";
-//     $stmt = $connection->prepare($sql);
-//     $stmt->execute(array());
-//     $users = $stmt->fetch(PDO::FETCH_ASSOC);
-
 $sql = 'SELECT * FROM user';
 $stmt = $connection->prepare($sql);
 $stmt->execute([]);
