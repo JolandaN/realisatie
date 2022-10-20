@@ -37,27 +37,21 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <form name="edit" class="form"
         action="index.php?page=deleteuser"
         method="POST">
-            <div class="col-9">
-                
-                <div class="row">
 
-                    <div class="col-12">
 
-                        <h6 class="h6 mb-1 fw-normal" style="color: red;">Name:</h6 >
+                        <h6 class="h6 mb-1 fw-normal" >Name:</h6 >
                         <input type="text" name="title" value="<?php echo $user['name'];?>" />  
                         
-                        <h6 class="h6 mb-1 fw-normal" style="color: red;">Email:</h6>   
+                        <h6 class="h6 mb-1 fw-normal" >Email:</h6>   
                         <input type="text" name="genre" value="<?php echo $user['email'];?>" /> 
                                                
                         <div class="icon_container">
                         <input type="submit" class="icon" name="delete" value="Delete"/>
 
                         <input type="hidden" name="id" value="<?php echo $user['ID'];?>" />
-                    </div>
-                </div>
-            
-            </div>
-            <a href="index.php?page=homepage">Back</a>
+                        <br>
+                        <br>
+                    <a href="index.php?page=homepage">Back</a>
             <br>
             <br>
         </form> 
