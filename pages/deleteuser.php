@@ -1,7 +1,5 @@
 <?php 
 
-    // the php that is executed when using submit button in videos.php
-
 if(!isset($_SESSION["ID"])&&($_SESSION["STATUS"]!="ACTIVE")) {
     echo "<script>
     alert('You have no access to this page.');
