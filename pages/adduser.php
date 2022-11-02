@@ -2,7 +2,7 @@
 <html lang="EN">
 <head>
 
-    <!-- adds video's to the database -->
+    <!-- adds user's to the database -->
 
 <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
 </head>
