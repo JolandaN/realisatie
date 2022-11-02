@@ -20,6 +20,12 @@
         show profile content logged in user. 
 
         <?php
+        if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIVE"){
+            echo "<script>
+            alert('You have no access to this page.');
+            location.href='../index.php';
+            </script>";
+        }
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $link = mysqli_connect("localhost", "root", "", "stattracker");
@@ -30,9 +36,7 @@ if($link === false){
 }
  
 // Attempt select query execution
-
-
-$sql = "SELECT * FROM user WHERE ID = 'ID'";
+$sql = "SELECT * FROM user WHERE ID = Can't get ID ";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
