@@ -33,13 +33,16 @@
                 <!-- navbar shown when rol is 0 (user)-->
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline;">StatTracker</h1>
-                        <div class="container-fluid">
+                        <div class="container-fluid"style="background-color:grey; max-width: 500px;">
 
                             <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
+                            <br>
                             <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=deleteprofile'">Delete Profile</a>
+                            <br>
+                            <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page</a>
+                            <br>
                             <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
-                            <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
-
+                            <br>
                             <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 
                         </div>
@@ -52,13 +55,16 @@
 
                 <!-- navbar shown when rol is 1 (admin) -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline; max-width: 200px;">StatTracker</h1>
+                <div class="container-fluid"style="background-color:grey; max-width: 500px;">
 
-                <div class="container-fluid">
-                <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline; max-width: 200px;">StatTracker</h1>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'" >Homepage</a>
+
                     <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=deleteprofile'">Delete Profile</a>
+
                     <a class="navbar-brand <?php if ($_GET["page"]=='adduser') {echo "active";}?>" onclick="location.href='index.php?page=adduser'">Add new user</a>
-                    <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'">#</a>
+
+                    <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page</a>
 
                     <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
                 </div>
