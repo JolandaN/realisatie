@@ -30,12 +30,11 @@ foreach ($users as $user) {
 <body>
  
 <div class="container">
-        <h1 class='title'>Account</h1>
         <br>
             <table class="table table-dark">
                 <thead>
                     <tr>
-                        <th>Account information</th>
+                        <h3>Account information</h3>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +46,8 @@ foreach ($users as $user) {
                             $email ?></td>
                     </tr>
 
-                    <tr><?php echo "<td><span class='right uppercase'> <a class='btn btn-primary' href='index.php?page=profile_edit&id=" .
+                    <tr>
+                        <?php echo "<td><span class='right uppercase'> <a class='btn btn-primary' href='index.php?page=profile_edit&id=" .
                             $user['ID'] .
                             "'>Edit profile</a></span></td>"; ?>
                 </tbody>
