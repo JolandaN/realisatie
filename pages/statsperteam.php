@@ -40,23 +40,7 @@ $assists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <!-- Shows Team Name -->
-        <h1 class='title'><?php echo $name ?></h1>
-        <div class="row">
-            <div class="col-6">
-                <!-- Shows total goals and assists -->
-                <h2 class="h2-title">Goals</h2>
-                <p class="h2-title"><?php foreach ($goals as $goal) {
-                    echo $goal['total'];
-                } ?></p>
-            </div>
-            <div class="col-6">
-                <h2 class="h2-title">Assists</h2>
-                <p class="h2-title"><?php foreach ($assists as $assist) {
-                    echo $assist['total'];
-                } ?></p>
-            </div>
-        </div>
-
+        <h1 class='title'>Team: <?php echo $name ?></h1>
         <table class="table table-dark">
             <thead>
                 <tr>
