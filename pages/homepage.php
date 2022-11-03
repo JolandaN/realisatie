@@ -45,6 +45,45 @@
         } }?></p>
 </div>
 
+<br>
+            <br>
+<h2 class="h2-title">Users</h2>
+        <br>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Team</th>
+                <th scope="col">Goals</th>
+                <th scope="col">Assists</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <!-- Display users -->
+            <?php
+
+            $sql = 'SELECT user.ID, user.name, user.goals, user.assists, team.teamname FROM user INNER JOIN team ON user.teamid = team.ID;';
+            $stmt = $connection->prepare($sql);
+            $stmt->execute([]);
+            $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach ($users as $user) {
+                $id = $user['ID'];
+
+            
+                echo '<tr>';
+                echo '<td>' . $user['name'] . '</td>';
+                echo '<td>' . $user['teamname'] . '</td>';
+                echo '<td>' . $user['goals'] . '</td>';
+                echo '<td>' . $user['assists'] . '</td>';
+
+            }
+            ?>
+            </tbody>
+        </table>
+
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
 <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>

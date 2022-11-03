@@ -60,13 +60,9 @@
 
                     <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'" >Homepage //</a>
 
-                    <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=deleteprofile'">Delete Profile //</a>
-
-                    <a class="navbar-brand <?php if ($_GET["page"]=='teams') {echo "active";}?>" onclick="location.href='index.php?page=teams'">Stats // </a>
-
                     <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
 
-                    <a class="navbar-brand <?php if ($_GET["page"]=='searchplayer') {echo "active";}?>" onclick="location.href='index.php?page=searchplayer'">Search player //</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='searchplayer') {echo "active";}?>" onclick="location.href='index.php?page=searchplayer'">Search player or team //</a>
 
                     <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 

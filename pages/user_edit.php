@@ -97,7 +97,7 @@ foreach ($users as $user) { ?>
             ?>
         </div>
         <br>
-        <button type="submit" name="submit" class="btn btn-dark uppercase">EDIT USER</button>
+        <button type="submit" name="submit" class="btn btn-dark uppercase">Submit Changes</button>
         <span class="right"><a href="index.php?page=searchplayer" class="text-red" style="text-decoration: none;">Back</a></span>
     </form>
 </div>
