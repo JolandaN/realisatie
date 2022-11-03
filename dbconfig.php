@@ -2,11 +2,11 @@
 
 // DBconfig establishes a connection with the database.
 
-DEFINE("USER","root");
-DEFINE("PASSWORD", "");
+DEFINE("user","root");
+DEFINE("password", "");
 try {
     $connection = new
-    PDO("mysql:host=localhost;dbname=stattracker",USER,PASSWORD);
+    PDO("mysql:host=localhost;dbname=stattracker",user,password);
     $connection->setAttribute
     (PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e) {
