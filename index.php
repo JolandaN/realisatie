@@ -3,7 +3,7 @@
 // DBconfig establishes a connection with the database
 
 session_start();
-include_once ("DBconfig.php");
+include_once ("dbconfig.php");
 include_once("header.php");
 
 
