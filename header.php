@@ -36,13 +36,13 @@
                         <div class="container-fluid"style="background-color:grey; max-width: 500px;">
 
                             <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage //</a>
-                            <br>
-                            <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=deleteprofile'">Delete Profile //</a>
-                            <br>
+
+                            <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=#'">#//</a>
+
                             <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
-                            <br>
+
                             <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'"># //</a>
-                            <br>
+
                             <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 
                         </div>
