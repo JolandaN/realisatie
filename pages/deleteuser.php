@@ -11,7 +11,7 @@ $stmt = $connection->prepare($sql);
 try{
     $stmt->execute(array($_POST['id']));
     echo "<script>alert('User is deleted.');
-    location.href='index.php?page=homepage';
+    location.href='index.php?page=deleteprofile';
     </script>";
 }catch(PDOException $e) {
     echo $e->getMessage();
