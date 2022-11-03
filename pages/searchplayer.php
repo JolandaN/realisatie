@@ -66,6 +66,8 @@ if (!isset($_SESSION['ID'])) {
                 <th scope="col">Name</th>
                 <th scope="col">Team</th>
                 <th scope="col">Admin</th>
+                <th scope="col">Goals</th>
+                <th scope="col">Assists</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
                 <th scope="col"></th>
@@ -74,7 +76,7 @@ if (!isset($_SESSION['ID'])) {
         <tbody>
             <!-- Display users -->
             <?php
-            $sql = 'SELECT user.ID, user.name, user.rol, team.teamname FROM user INNER JOIN team ON user.teamid = team.ID;';
+            $sql = 'SELECT user.ID, user.name, user.rol, user.goals, user.assists, team.teamname FROM user INNER JOIN team ON user.teamid = team.ID;';
             $stmt = $connection->prepare($sql);
             $stmt->execute([]);
             $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -89,6 +91,8 @@ if (!isset($_SESSION['ID'])) {
                 echo '<td>' . $user['name'] . '</td>';
                 echo '<td>' . $user['teamname'] . '</td>';
                 echo '<td>' . $admin . '</td>';
+                echo '<td>' . $user['goals'] . '</td>';
+                echo '<td>' . $user['assists'] . '</td>';
                 echo "<td><a style='text-decoration: none;' href='index.php?page=user_edit&id=" .
                     $user['ID'] .
                     "'>&#9989;</a></td>";
