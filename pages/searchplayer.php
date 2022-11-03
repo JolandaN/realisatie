@@ -167,6 +167,9 @@ if (!isset($_SESSION['ID'])) {
                 $id = $team['ID'];
                 echo '<tr>';
                 echo '<td>' . $team['teamname'] . '</td>';
+                echo "<td><a style='text-decoration: none;' href='index.php?page=team_edit&id=" .
+                $team['ID'] .
+                "'>&#9989;</a></td>";
                 echo "<td><a onclick='javascript:confirmationDelete($(this));return false;' style='text-decoration: none;'  href='index.php?page=team_delete&id=" .
                     $team['ID'] .
                     "'>&#10062;</a></td>";
@@ -179,7 +182,7 @@ if (!isset($_SESSION['ID'])) {
 <script>
     // conformation script for delete
     function confirmationDelete(anchor){
-        var conf = confirm('Are you sure want to delete this movie?');
+        var conf = confirm('Are you sure want to delete this team?');
         if(conf)
             window.location=anchor.attr("href");
     }
