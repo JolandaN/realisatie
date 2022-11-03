@@ -33,13 +33,13 @@
 
 <div class="col-6">
 <!-- Shows total goals and assists -->
-        <h2 class="h2-title">Goals</h2>
+        <h2 class="h2-title">Total Goals</h2>
         <p class="h2-title"><?php foreach ($totals as $total) {
             echo $total['totalGoals'];
         ?></p>
     </div>
     <div class="col-6">
-        <h2 class="h2-title">Assists</h2>
+        <h2 class="h2-title">Total Assists</h2>
         <p class="h2-title"><?php {
             echo $total['totalAssists'];
         } }?></p>
