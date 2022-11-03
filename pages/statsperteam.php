@@ -58,6 +58,9 @@ $assists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $user['name']; ?></td>
                     <td><?php echo $user['goals']; ?></td>
                     <td><?php echo $user['assists']; ?></td>
+                    <td><?php echo "<span class='uppercase'> <a class='btn  btn-outline-secondary' href='index.php?page=score_edit&id=" .
+                        $user['ID'] .
+                        "'>Edit score</a></span>"; ?></td>
                 </tr>
                 <?php
                 
