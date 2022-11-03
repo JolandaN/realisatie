@@ -28,7 +28,7 @@ $teams = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <table class="table table-dark">
             <thead>
                 <tr>
-                    <th scope="col">Team</th>
+                    <th scope="col">Team Name</th>
                     <th scope="col">View team</th>
                 </tr>
             </thead>
