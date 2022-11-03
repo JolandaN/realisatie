@@ -37,7 +37,7 @@
 
                             <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage //</a>
 
-                            <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=#'">#//</a>
+                            <a class="navbar-brand <?php if ($_GET["page"]=='statsperteam') {echo "active";}?>" onclick="location.href='index.php?page=statsperteam'">Stats per team //</a>
 
                             <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
 
