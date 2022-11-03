@@ -33,15 +33,11 @@
                 <!-- navbar shown when rol is 0 (user)-->
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline;">StatTracker</h1>
-                        <div class="container-fluid"style="background-color:grey; max-width: 500px;">
+                        <div class="container-fluid"style="background-color:grey; max-width: 250px;">
 
-                            <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage //</a>
+                            <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'">Homepage </a>
 
-                            <a class="navbar-brand <?php if ($_GET["page"]=='teams') {echo "active";}?>" onclick="location.href='index.php?page=teams'">Stats per team//</a>
-
-                            <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
-
-                            <a class="navbar-brand <?php if ($_GET["page"]=='#') {echo "active";}?>" onclick="location.href='index.php?page=#'"># //</a>
+                            <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page </a>
 
                             <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 
@@ -56,13 +52,13 @@
                 <!-- navbar shown when rol is 1 (admin) -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <h1 href="#" style="color: blue; font-size: 50px; text-decoration: underline; max-width: 200px;">StatTracker</h1>
-                <div class="container-fluid"style="background-color:grey; max-width: 500px;">
+                <div class="container-fluid"style="background-color:grey; max-width: 370px;">
 
-                    <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'" >Homepage //</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='homepage') {echo "active";}?>" onclick="location.href='index.php?page=homepage'" >Homepage </a>
 
-                    <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page </a>
 
-                    <a class="navbar-brand <?php if ($_GET["page"]=='searchplayer') {echo "active";}?>" onclick="location.href='index.php?page=searchplayer'">Search player or team //</a>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='searchplayer') {echo "active";}?>" onclick="location.href='index.php?page=searchplayer'">Search player or team </a>
 
                     <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
 

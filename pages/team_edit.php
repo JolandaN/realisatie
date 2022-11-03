@@ -38,7 +38,10 @@ foreach ($teams as $team) { ?>
                 'teamname'
             ]; ?>"/>
         </div>
+        <br>
+        <br>
            <button type="submit" name="submit" class="btn btn-dark uppercase">Edit team</button>
+           <br>
         <span class="right"><a href="index.php?page=searchplayer" class="text-red" style="text-decoration: none;">Back</a></span>
     </form>
 </div>

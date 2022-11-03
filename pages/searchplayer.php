@@ -157,6 +157,7 @@ if (!isset($_SESSION['ID'])) {
         <thead>
             <tr>
                 <th>Team</th>
+                <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </thead>
