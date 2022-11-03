@@ -62,7 +62,7 @@
 
                     <a class="navbar-brand <?php if ($_GET["page"]=='deleteprofile') {echo "active";}?>" onclick="location.href='index.php?page=deleteprofile'">Delete Profile //</a>
 
-                    <!-- <a class="navbar-brand <?php if ($_GET["page"]=='adduser') {echo "active";}?>" onclick="location.href='index.php?page=adduser'">Add new user // </a> -->
+                    <a class="navbar-brand <?php if ($_GET["page"]=='teams') {echo "active";}?>" onclick="location.href='index.php?page=teams'">Stats // </a>
 
                     <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
 
