@@ -66,8 +66,10 @@
 
                     <a class="navbar-brand <?php if ($_GET["page"]=='profilepage') {echo "active";}?>" onclick="location.href='index.php?page=profilepage'">Profile page //</a>
 
-                    <button type="button" class="btn btn-dark" onclick="logout()">Logout</button>
-                </div>
+                    <a class="navbar-brand <?php if ($_GET["page"]=='searchplayer') {echo "active";}?>" onclick="location.href='index.php?page=searchplayer'">Search player //</a>
+
+                    <button type="button" class="btn btn-dark" onclick="logout()">logout</button>
+
         </nav>
             <?php
             }
